@@ -2,45 +2,38 @@
 <html lang="en">
 	<head>
 		<title>Main page – linux-user36</title>
-		<style>
-			body {
-				font: Helvetica, Serif;
-				background-color: #f5f5dc;
-			}
-		</style>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/-->
 	</head>
 	<body>
-		<center>
-			<h1>Hello World</h1>
-			Welcome to my <b>website</b>!<br/>
-			All the contents are written entirely in <span style="color:red">HTML</span>
-			<p/>
-			<table>
-				<tr>
-					<th>Priority</th>
-					<th>Item</th>
-					<th>Completed</th>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Earn reputation on <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></td>
-					<td><form><input type="checkbox"/></form></td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Update website</td>
-					<td><form><input type="checkbox"/></form></td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Extend this list</td>
-					<td><form><input type="checkbox"/></form></td>
-				</tr>
-			</table>
-		</center>
+		<h1>Welcome!</h1>
+		<p>
+		This is the website of <span style="color:red">linux_user36</span>, a 3-year-experience Java programmer. He’s also quite familiar with <a href="https://processing.org">Processing</a> and the <a href="https://developer.android.com">Android</a> framework, programming apps since roughly a year.
+		</p><p>
+		Sadly, his lack of self-motivation lead to him never quite completing any of his projects. That might change though with his latest project, <a href="projects/yedex.html">Yedex</a>.
+		</p>
 
-		<footer>
-			<p align="right">* Terrible styling, I know</p>
-		</footer>
+		<h2>Accounts:</h2>
+		<a href="https://stackoverflow.com/u/12344762" target="_blank">Stack Overflow</a><br/>
+		<a href="https://github.com/linux-user36" target="_blank">GitHub</a>
+
+		<!--canvas id="soflair"/>
+		<script type="text/javascript">
+			var image = new Image;
+			image.onload = function() {
+				var context = document.getElementById('soflair').getContext('2d');
+				context.drawImage(image, 0, 0);
+				var data = context.getImageData(0, 0, image.width, image.height).data;
+
+				console.log("" + data);
+				for (var i = 0; i < data.length; i += 4) {
+					if ((data[i] & data[i + 1] & data[i + 2] & data[i + 3]) === 0xFF)
+						data[i] = data[i + 1] = data[i + 2] = data[i + 3] = 0;
+				}
+			};
+			image.src = 'https://stackoverflow.com/users/flair/12344762.png?theme=clean';
+		</script-->
 	</body>
 </html>
