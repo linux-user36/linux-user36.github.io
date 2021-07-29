@@ -16,15 +16,15 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 	left: 0;
 	max-width: 30%;
-	min-width: 160px;
 	overflow-x: hidden;
 	padding-top: 20px;
 	position: fixed;
 	top: 0;
+	width: 160px;
 	z-index: 0;
 }
 
-.sidenav a {
+.sidenav * {
 	display: block;
 	padding: 6px 8px 6px 16px;
 	/*text-decoration: none;*/
