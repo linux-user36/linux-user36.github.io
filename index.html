@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Main page – linux-user36</title>
-		<meta charset="utf-8"/>
-		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
-		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/-->
-	</head>
-	<body>
-		<h1>Welcome!</h1>
-		<p>
-		This is the website of <span style="color:red">linux_user36</span>, a 3-year-experience Java programmer. He’s also quite familiar with <a href="https://processing.org">Processing</a> and the <a href="https://developer.android.com">Android</a> framework, programming apps since roughly a year.
-		</p><p>
-		Sadly, his lack of self-motivation lead to him never quite completing any of his projects. That might change though with his latest project, <a href="/projects/yedex.html">Yedex</a>.
-		</p>
+<head>
+<title>Main page – linux-user36</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link rel="stylesheet" type="text/css" href="/style.css"/>
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/-->
+</head>
+<body>
+<div class="sidenav">
+	<a href="/">Home</a>
+	<a href="/news.html">News</a>
+	<a href="/projects">Projects</a>
+	<a href="/about">About</a>
+</div>
 
-		<h2>Accounts:</h2>
-		<a href="https://stackoverflow.com/u/12344762" target="_blank">Stack Overflow</a><br/>
-		<a href="https://github.com/linux-user36" target="_blank">GitHub</a>
+<div class="main">
+	<h1>Welcome!</h1>
+	<p>This is the website of <b>linux_user36</b>, a 3-year-experience Java programmer. He’s also quite familiar with <a href="https://processing.org">Processing</a> and the <a href="https://developer.android.com">Android</a> framework, programming apps since roughly a year.</p>
 
-		<!--canvas id="soflair"/>
-		<script type="text/javascript">
-			var image = new Image;
-			image.onload = function() {
-				var context = document.getElementById('soflair').getContext('2d');
-				context.drawImage(image, 0, 0);
-				var data = context.getImageData(0, 0, image.width, image.height).data;
+	<p>Sadly, his lack of self-motivation lead to him never quite completing any of his projects. That might change though with his latest project, <a href="projects/yedex.html">Yedex</a>.</p>
 
-				console.log("" + data);
-				for (var i = 0; i < data.length; i += 4) {
-					if ((data[i] & data[i + 1] & data[i + 2] & data[i + 3]) === 0xFF)
-						data[i] = data[i + 1] = data[i + 2] = data[i + 3] = 0;
-				}
-			};
-			image.src = 'https://stackoverflow.com/users/flair/12344762.png?theme=clean';
-		</script-->
-	</body>
+	<h2>Accounts:</h2>
+	<a href="https://stackoverflow.com/u/12344762" target="_blank">Stack Overflow</a><br/>
+	<a href="https://github.com/linux-user36" target="_blank">GitHub</a>
+</div>
+</body>
 </html>

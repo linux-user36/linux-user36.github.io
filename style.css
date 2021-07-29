@@ -1,0 +1,35 @@
+body {
+	background-color: beige;
+	font-family: sans-serif;
+	margin: auto;
+	max-width: 960px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: monospace;
+}
+
+.sidenav {
+	background-color: #eee;
+	box-shadow: 0px 0px 8px 0px #888;
+	font-family: monospace;
+	height: 100%;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+	position: fixed;
+	top: 0;
+	width: 160px;
+	z-index: 0;
+}
+
+.sidenav a {
+	display: block;
+	padding: 6px 8px 6px 16px;
+	/*text-decoration: none;*/
+}
+
+.main {
+	margin-left: 160px; /* Same as sidenav width */
+	padding: 20px;
+}
