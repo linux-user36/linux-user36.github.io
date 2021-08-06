@@ -2,29 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>About – linux-user36</title>
+	<title>About - linux-user36</title>
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-	<link rel="stylesheet" type="text/css" href="./style.css"/>
+	<link rel="stylesheet" type="text/css" href="./internal/style.css"/>
 </head>
 <body>
-<div class="sidenav">
+<header>
+<div class="navbar">
 	<a href="./">Home</a>
-	<a href="./news">News</a>
-	<a href="./projects">Projects</a>
-	<b>> About</b>
-	<span class="copyright">&copy; 2021 linux_user36</span>
+	<a href="./news.html">News</a>
+	<div class="dropdown">
+		<button class="dropdown-option">Projects</button>
+		<div class="dropdown-content">
+			<a href="./projects">Overview</a>
+			<a href="./projects/yedex.html">Yedex</a>
+			<a href="./projects/mineclone.html">MineClone</a>
+		</div>
+	</div>
+	<a class="active" href="./about.html">> About</a>
 </div>
+</header>
 
-<div class="main">
+<div class="content">
 	<h1>About</h1>
-	<p>Hello, there! Welcome to my About page. Here I’ll be writing a bit about myself and what I’m currently doing.</p>
+	<p>Hello, there! Welcome to my About page. Here I&rsquo;ll be writing a bit about myself and what I&rsquo;m currently doing.</p>
 	<p>Please note that this page (together with the rest of website) is still <b>work in progress</b>, so it will partially be pretty empty.</p>
 	<p>Also, if I get down to making a Contact page one day, please call me <b>Linus</b>!</p>
 	<p style="text-align:right">~ Linus, July 29, 2021</p>
 
-	<h2>Accounts:</h2>
+	<h2>Accounts</h2>
 	<a href="https://stackoverflow.com/u/12344762" target="_blank">Stack Overflow</a><br/>
 	<a href="https://github.com/linux-user36" target="_blank">GitHub</a>
 </div>
+
+<footer>
+	<div class="copyright">&copy; 2021 linux_user36</div>
+</footer>
 </body>
 </html>
