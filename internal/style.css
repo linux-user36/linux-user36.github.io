@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
 html {
 	height: 100%;
 }
 
 body {
 	background-image: url(./background.jpg);
-	font-family: sans-serif;
+	font-family: 'Noto Serif', Arial, sans-serif;
 	height: 100%;
 	margin: 0 auto 0;
 	max-width: 960px;
@@ -12,7 +15,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: monospace;
+	font-family: 'Roboto Mono', monospace;
 	text-align: center;
 }
 
@@ -22,7 +25,7 @@ header {
 	box-shadow: 0px 0px 8px;
 	display: flex;
 	float: center;
-	font-family: monospace;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 150%;
 	height: 80px;
 	left: 0;
@@ -66,7 +69,6 @@ header {
 }
 
 .navbar a:hover, .dropdown:hover .dropdown-option {
-	font-weight: bold;
 	color: orange;
 }
 
@@ -104,6 +106,11 @@ header {
 	min-height: 100%;
 	padding: 100px 20px 20px 20px; /* header height + 20px */
 	z-index: 10;
+}
+
+.help {
+	border-bottom: 1px dotted black;
+	cursor: help;
 }
 
 .copyright {
