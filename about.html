@@ -12,9 +12,8 @@
 	<a href="./">Home</a>
 	<a href="./news.html">News</a>
 	<div class="dropdown">
-		<button class="dropdown-option">Projects</button>
+		<a class="dropdown-option" href="./projects">Projects</a>
 		<div class="dropdown-content">
-			<a href="./projects">Overview</a>
 			<a href="./projects/yedex.html">Yedex</a>
 			<a href="./projects/mineclone.html">MineClone</a>
 		</div>
@@ -25,31 +24,44 @@
 
 <div class="content">
 	<h1>About</h1>
-	<p>Hello, there! Welcome to my About page. Here I&rsquo;ll be writing a bit about myself and what I&rsquo;m currently doing.</p>
-	<p>Please note that this page (together with the rest of website) is still <b>work in progress</b>, so it will partially be pretty empty.</p>
+	<p>Hey, there! I&rsquo;m <span style="font-family:'Roboto Mono'">linux_user36</span>. I originally started programming with the goal of making games.</p>
 	<p>Also, if I get down to making a Contact page one day, please call me <b>Linus</b>!</p>
 	<p style="text-align:right">~ Linus, July 29, 2021</p>
 
-	<h2>Accounts</h2>
-	<a href="https://stackoverflow.com/u/12344762" target="_blank">Stack Overflow</a><br/>
-	<a href="https://github.com/linux-user36" target="_blank">GitHub</a>
+	<h2>Links</h2>
+	<table style="table-layout:fixed;white-space:nowrap;margin:auto;border:dashed 1px black">
+		<tr><td><a href="https://stackoverflow.com/u/12344762" target="_blank">Stack Overflow</a></td><td>My Stack Overflow account</td></tr>
+		<tr><td><a href="https://github.com/linux-user36" target="_blank">GitHub</a></td><td>My GitHub account</td></tr>
+		<tr><td>&rArr; <a href="./history.html" style="color:orange">History</a> &lArr;</td><td>A short autobiography of mine</td></tr>
+	</table>
 
-	<h2>History</h2>
-	<p>I started programming almost five years ago now, in the fall of 2016. Back then, like a lot of other people I know, I had a horribly wrong idea of programming. I thought programming was just typing in a few lines of code and bam! You&rsquo;ve got yourself a new <span class="help" title="A game from a major publisher with a big budget and lots of marketing">AAA</span> title released (sometimes it seems to me like we&rsquo;re almost there already with things like the <a href="https://unrealengine.com">Unreal</a> engine).</p>
-	<p>At the time I was taking programming lessons once a week with a few friends of mine. But after the first few sessions, our teacher got sick, and that&rsquo;s the point where most of my comrades stopped programming. But not me! You would&rsquo;ve thought we were using something like <a href="https://python.org">Python</a>, but in fact, our teacher had shown us a program called <cite>Scratch</cite>. And that&rsquo;s where my story began &hellip;</p>
+	<h2>Contact</h2>
+	<p>If you want to contact me, write an e-mail to <strong>insert.email@here.com</strong>, or type your message below and click <strong>"Submit"</strong>.</p>
+	
+	<p style="text-align:center">
+	<textarea id="feedback" rows="8" cols="40" maxlength="280" onkeydown="updateCounter()" onkeyup="updateCounter()" placeholder="Write your feedback here ..."></textarea><br/>
+	<button id="submit" onclick="submit()">Submit</button>
+	<span id="counter"></span>
 
-	<h3>Starting From Scratch</h3>
-	<p>For anyone who doesn&rsquo;t know, <a href="https://scratch.mit.edu">Scratch</a> is an online platform for creating simple video games and animations. In contrast to other programming languages, Scratch uses a simple drag-and-drop system to quickly snap together scripts and test them without ever having to type or compile a program. The first weekend after the lessons had started, I spent almost 48 hours on the computer, skimming YouTube for tutorials and replicating the games I found there block by block. Without even knowing it, I was slowly learning and understanding what those programs did and how they worked.</p>
-	<p>A few weeks later I was already coding along my first <a href="https://en.scratch-wiki.info/wiki/Raycaster">raycaster</a> using <a href="https://en.scratch-wiki.info/wiki/List">lists</a> and <a href="https://en.scratch-wiki.info/wiki/My_Blocks">custom blocks</a> which I barely understood at the time (and to be honest, was kind of scared of). After having made a 3D rotating cube for which you would&rsquo;ve needed a PhD in mathematics to have actually known what you were doing, I returned to my sweet spot: platformers. Scratch already has a few built-in blocks for collision detection, and doing everything else myself, I quickly finished my first scrolling platformer using a simple trick I had discovered. You simply had to make the player stationary and apply the physics to the level geometry instead, just inverted.</p>
-	<p>It was around this time that I decided to create an account. You see, Scratch isn&rsquo;t just a website for programming stuff &hellip; It&rsquo;s a type of social media platform with a big community and tons of published games. Most people probably sign up to a website the moment they decide to use it for a long period of time, but I&rsquo;m not most people. I&rsquo;m freakish when it comes to privacy, and not to mention, I just hadn&rsquo;t created many online accounts up to that point; that was simply one of my basic principles of life. It cost myself quite a lot of effort, and I just can&rsquo;t stress enough how important this step was (for me, but also for the story).</p>
-	<p>So, I created an account, called it <a href="https://scratch.mit.edu/users/TC-Studios">TC-Studios</a>, and uploaded a few of my already finished projects that I deemed worthy of publishing. Have I lost you yet? No? Then let&rsquo;s move on!</p>
-	<p>A while later I decided to participate in a <span class="help" title="A competition where you have a short amount of time to create the best game you possibly can matching a given theme">game jam</span> called TAG and submitted my newly created game <a href="https://scratch.mit.edu/projects/198127533/">DOT</a> which, in hindsight, is probably my best (completed) game up to now. Only the best ten Scratchers were allowed to move on to the second round though, and I, being only 13th place, saw no chance of progressing any further. But slowly, in a span of three weeks, three whole people dropped out, and so the host asked me to participate. That&rsquo;s when I created my to this day second best game called <a href="https://scratch.mit.edu/projects/209842368/">Galaxy Striker</a>. It was a lot more complicated than my first entry, using only a single main loop and having tons of tiny visual easter eggs.</p>
-	<p>All that happened about three years ago. Most games on the website have the simplicity of my first entry and are nevertheless, or rather precisely because of that, extremely fun and addictive to play. Knowing that, it seems like no surprise that I wasn&rsquo;t part of the five people who got to move on. So, I returned my focus to other projects &hellip;</p>
-	<p>The jam never did finish, the hosts had planned two more rounds with only five people left, and not being organized all that well, the hype soon died away. The following month, I released two more projects, respectively testing my AI and <a href="https://en.scratch-wiki.info/wiki/Cloud_Data">cloud data</a> skills. I also joined another jam, this one being not quite as big, but I was too focused on beautifying the code, so the gameplay was neither fun nor interesting.</p>
-	<p>Now let me tell you the story of the biggest and most complicated project I have ever released (not to say that I haven&rsquo;t <em>started</em> bigger ones). This happened roughly at the same time I started work on my AI project. I hadn&rsquo;t really thought of finishing this one (a pixel art editor), I just reckoned it to be a small test, but as it is with all programming undertakings, you slowly think up more and more features, until you&rsquo;re almost certain you won&rsquo;t be able to put everything you&rsquo;d planned into the final product. I did manage to cram in all my personal must-haves, even using a flood fill algorithm and an input parser. Sadly, it ended up horribly slow, just like most of the more complex projects you find on Scratch, and I partially struggled to get in all the minimum features I had set myself to mind. I needed something more powerful &hellip;</p>
+	<script>
+		function submit() {
+			var message = document.getElementById('feedback').value;
+			if (message.length > 20 && message.length / (message.match(/\s/g) || []).length > 20) {
+				document.getElementById('counter').innerHTML = 'Please add more spaces';
+				return;
+			}
 
-	<h3>Java Is Also an Island</h3>
-	<p>TODO</p>
+			document.location.href = encodeURI(`mailto:abc@def.com?body=${message}&subject=Feedback for linux-user36`);
+		}
+
+		function updateCounter() {
+			var field = document.getElementById('feedback');
+			var max = field.getAttribute('maxlength');
+			document.getElementById('counter').innerHTML = max - field.value.length + "/" + max;
+		}
+		updateCounter();
+	</script>
+	</p>
 </div>
 
 <footer>
