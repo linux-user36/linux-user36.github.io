@@ -24,9 +24,8 @@
 
 <div class="content">
 	<h1>About</h1>
-	<p>Hey, there! I&rsquo;m <span style="font-family:'Roboto Mono'">linux_user36</span>. I originally started programming with the goal of making games.</p>
-	<p>Also, if I get down to making a Contact page one day, please call me <b>Linus</b>!</p>
-	<p style="text-align:right">~ Linus, July 29, 2021</p>
+	<p>Hey, there! I&rsquo;m <span style="font-family:'Roboto Mono'">linux_user36</span>, but you can simply call me <strong>Linus</strong>. I originally started programming with the goal of making games, but have slowly drifted off to making Android apps.</p>
+	<p style="text-align:right">~ Linus, August 16, 2021</p>
 
 	<h2>Links</h2>
 	<table style="table-layout:fixed;white-space:nowrap;margin:auto;border:dashed 1px black">
@@ -35,8 +34,8 @@
 		<tr><td>&rArr; <a href="./history.html" style="color:orange">History</a> &lArr;</td><td>A short autobiography of mine</td></tr>
 	</table>
 
-	<h2>Contact</h2>
-	<p>If you want to contact me, write an e-mail to <strong>insert.email@here.com</strong>, or type your message below and click <strong>"Submit"</strong>.</p>
+	<h2 id="contact">Contact</h2>
+	<p>If you want to contact me, write an e-mail to <span id="mail" style="font-weight:bold"></span>, or type your message below and click <strong>"Submit"</strong>.</p>
 	
 	<p style="text-align:center">
 	<textarea id="feedback" rows="8" cols="40" maxlength="280" onkeydown="updateCounter()" onkeyup="updateCounter()" placeholder="Write your feedback here ..."></textarea><br/>
@@ -51,7 +50,7 @@
 				return;
 			}
 
-			document.location.href = encodeURI(`mailto:abc@def.com?body=${message}&subject=Feedback for linux-user36`);
+			document.location.href = encodeURI(`mailto:${_0x1f9d72("\x33\24\x36\x2a", "\x71\x2a")}?body=${message}&subject=Feedback for linux-user36`);
 		}
 
 		function updateCounter() {
@@ -59,6 +58,20 @@
 			var max = field.getAttribute('maxlength');
 			document.getElementById('counter').innerHTML = max - field.value.length + "/" + max;
 		}
+
+		// It was quite strenuous debugging this function
+		function _0x1f9d72(_0x84a5cc, _0x1d8451) {
+			var a = '\x6c\x69\x6e\x7d\x2a';
+			a += '\x78\x2d\x24\x2f\x73';
+			a += '\x65\x72' + _0x84a5cc + '\24';
+			a += '\x26' + _0x1d8451 + '\x25\x67';
+			a += '\x6d\24\x78\x2a\x2e\x6e';
+			a += '\x65\x74\x24\x2a';
+
+			return a.replace(/[*$]/g, new String()).replace(/[\57\175]/g, 'u').replace(/&q%/, String.fromCharCode(0o144 - 0o124 << 0x2));
+		}
+
+		document.getElementById('mail').innerHTML = _0x1f9d72("\x33\x36", "\x2a\x71");
 		updateCounter();
 	</script>
 	</p>
