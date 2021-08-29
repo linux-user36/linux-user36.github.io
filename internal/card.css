@@ -8,3 +8,7 @@
 .card p {
 	padding-left: 40px;
 }
+
+.card-header {
+	font-family: 'Roboto Mono', monospace;
+}
