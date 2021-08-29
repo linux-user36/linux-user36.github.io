@@ -14,11 +14,52 @@ body {
 	padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* HTML element customizations */
+code {
+	font-family: 'Robot Mono', monospace;
+}
+
+h1, h2, h3, h4 {
 	font-family: 'Roboto Mono', monospace;
 	text-align: center;
 }
 
+h5, h6 {
+	font-family: 'Roboto Mono', monospace;
+	text-align: start;
+}
+
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+	content: '';
+	display: block;
+	height: 100px;
+	margin-top: -100px;
+	position: relative;
+	width: 0;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+	table-layout: fixed;
+}
+
+table td {
+	border: 1px solid black;
+	padding: 4px;
+	word-wrap:break-word;
+}
+
+textarea {
+	resize: none;
+}
+
+.help {
+	border-bottom: 1px dotted black;
+	cursor: help;
+}
+
+/* Navigation bar */
 header {
 	align-items: center;
 	background-color: #333;
@@ -105,25 +146,14 @@ header {
 	z-index: 10;
 }
 
-.help {
-	border-bottom: 1px dotted black;
-	cursor: help;
-}
-
-.copyright {
+/* Copyright banner */
+.copyright::before {
 	background: white;
 	bottom: 0;
+	content: '🄯 2021 linux_user36';
 	font-family: monospace;
 	margin-bottom: 20px;
 	margin-left: 20px;
 	position: fixed;
 	text-align: right;
-}
-
-textarea {
-	resize: none;
-}
-
-#counter {
-	 font-family:'Roboto Mono';
 }

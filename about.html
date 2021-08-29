@@ -10,7 +10,7 @@
 <header>
 <div class="navbar">
 	<a href="./">Home</a>
-	<a href="./news.html">News</a>
+	<a href="./news">News</a>
 	<div class="dropdown">
 		<a class="dropdown-option" href="./projects">Projects</a>
 		<div class="dropdown-content">
@@ -24,25 +24,25 @@
 
 <div class="content">
 	<h1>About</h1>
-	<p>Hey, there! I&rsquo;m <span style="font-family:'Roboto Mono'">linux_user36</span>, but you can simply call me <strong>Linus</strong>. I originally started programming with the goal of making games, but have slowly drifted off to making Android apps.</p>
-	<p style="text-align:right">~ Linus, August 16, 2021</p>
+	<p>Hey, there! I&rsquo;m <code>linux_user36</code>, but you can simply call me <strong>Linus</strong>. I originally started programming with the goal of making games, but have slowly drifted off to making Android apps. Also, I&rsquo;m quite good at <em>not</em> finishing any of my projects.</p>
+	<p style="text-align:right">~ Linus, August 28, 2021</p>
 
-	<h2>Links</h2>
-	<table style="table-layout:fixed;white-space:nowrap;margin:auto;border:dashed 1px black">
-		<tr><td><a href="https://stackoverflow.com/u/12344762" target="_blank">Stack Overflow</a></td><td>My Stack Overflow account</td></tr>
-		<tr><td><a href="https://github.com/linux-user36" target="_blank">GitHub</a></td><td>My GitHub account</td></tr>
-		<tr><td>&rArr; <a href="./history.html" style="color:orange">History</a> &lArr;</td><td>A short autobiography of mine</td></tr>
-	</table>
+	<h2 id="links">Links</h2>
+	<ul>
+		<li><a href="https://stackoverflow.com/u/12344762" target="_blank">Stack Overflow</a></li>
+		<li><a href="https://github.com/linux-user36" target="_blank">GitHub</a></li>
+		<li><a href="./history.html">History</a> &ndash; A short autobiography of mine</li>
+	</ul>
 
 	<h2 id="contact">Contact</h2>
-	<p>If you want to contact me, write an e-mail to <span id="mail" style="font-weight:bold"></span>, or type your message below and click <strong>"Submit"</strong>.</p>
-	
+	<p>If you want to contact me, write an e-mail to <span id="mail" style="font-weight:bold"><strong>[Please enable scripting to see mail address here]</strong></span>, or type your message below and click <strong>&ldquo;Submit&rdquo;</strong>.</p>
+
 	<p style="text-align:center">
 	<textarea id="feedback" rows="8" cols="40" maxlength="280" onkeydown="updateCounter()" onkeyup="updateCounter()" placeholder="Write your feedback here ..."></textarea><br/>
 	<button id="submit" onclick="submit()">Submit</button>
-	<span id="counter"></span>
+	<code id="counter"></code>
 
-	<script>
+	<script type="text/javascript">
 		function submit() {
 			var message = document.getElementById('feedback').value;
 			if (message.length > 20 && message.length / (message.match(/\s/g) || []).length > 20) {
@@ -50,7 +50,7 @@
 				return;
 			}
 
-			document.location.href = encodeURI(`mailto:${_0x1f9d72("\x33\24\x36\x2a", "\x71\x2a")}?body=${message}&subject=Feedback for linux-user36`);
+			document.location.href = `mailto:${_0x1f9d72("\x33\24\x36\x2a", "\x71\x2a")}?body=${encodeURI(message)}&subject=Feedback%20for%20linux-user36`;
 		}
 
 		function updateCounter() {
@@ -59,7 +59,7 @@
 			document.getElementById('counter').innerHTML = max - field.value.length + "/" + max;
 		}
 
-		// It was quite strenuous debugging this function
+		// Debugging this function was quite strenuous
 		function _0x1f9d72(_0x84a5cc, _0x1d8451) {
 			var a = '\x6c\x69\x6e\x7d\x2a';
 			a += '\x78\x2d\x24\x2f\x73';
@@ -78,7 +78,7 @@
 </div>
 
 <footer>
-	<div class="copyright">&copy; 2021 linux_user36</div>
+	<div class="copyright"></div>
 </footer>
 </body>
 </html>

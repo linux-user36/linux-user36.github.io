@@ -1,0 +1,10 @@
+.card {
+	background: beige;
+	border-radius: 12px;
+	box-shadow: 0px 0px 4px inset;
+	padding: 12px;
+}
+
+.card p {
+	padding-left: 40px;
+}
