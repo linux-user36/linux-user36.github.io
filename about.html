@@ -18,7 +18,7 @@
 			<a href="./projects/mineclone.html">MineClone</a>
 		</div>
 	</div>
-	<a class="active" href="./about.html">> About</a>
+	<a class="active" href="./about.html">About</a>
 </div>
 </header>
 
@@ -35,17 +35,22 @@
 	</ul>
 
 	<h2 id="contact">Contact</h2>
-	<p>If you want to contact me, write an e-mail to <span id="mail" style="font-weight:bold"><strong>[Please enable scripting to see mail address here]</strong></span>, or type your message below and click <strong>&ldquo;Submit&rdquo;</strong>.</p>
+	<p>If you want to contact me, write an e-mail to <span id="mail" style="font-weight:bold"><strong>[Enable scripting to see mail address here]</strong></span>, or type your message below and click <strong>&ldquo;Submit&rdquo;</strong>. I&rsquo;ll try my best to answer as soon as possible!</p>
 
 	<p style="text-align:center">
-	<textarea id="feedback" rows="8" cols="40" maxlength="280" onkeydown="updateCounter()" onkeyup="updateCounter()" placeholder="Write your feedback here ..."></textarea><br/>
+	<textarea id="feedback" rows="8" cols="40" maxlength="500" onkeydown="count()" onkeyup="count()" placeholder="Write your feedback here ..."></textarea><br/>
 	<button id="submit" onclick="submit()">Submit</button>
 	<code id="counter"></code>
 
 	<script type="text/javascript">
 		function submit() {
 			var message = document.getElementById('feedback').value;
-			if (message.length > 20 && message.length / (message.match(/\s/g) || []).length > 20) {
+			if (message.trim().length == 0) {
+				document.getElementById('counter').innerHTML = 'Please type something first';
+				return;
+			}
+
+			if (message.length > 20 && message.length / (message.match(/\s+/g) || []).length > 20) {
 				document.getElementById('counter').innerHTML = 'Please add more spaces';
 				return;
 			}
@@ -53,13 +58,13 @@
 			document.location.href = `mailto:${_0x1f9d72("\x33\24\x36\x2a", "\x71\x2a")}?body=${encodeURI(message)}&subject=Feedback%20for%20linux-user36`;
 		}
 
-		function updateCounter() {
+		function count() {
 			var field = document.getElementById('feedback');
 			var max = field.getAttribute('maxlength');
 			document.getElementById('counter').innerHTML = max - field.value.length + "/" + max;
 		}
 
-		// Debugging this function was quite strenuous
+		// Debugging this function was quite strenuous. Hope no web scraper finds my e-mail address now
 		function _0x1f9d72(_0x84a5cc, _0x1d8451) {
 			var a = '\x6c\x69\x6e\x7d\x2a';
 			a += '\x78\x2d\x24\x2f\x73';
@@ -72,7 +77,7 @@
 		}
 
 		document.getElementById('mail').innerHTML = _0x1f9d72("\x33\x36", "\x2a\x71");
-		updateCounter();
+		count();
 	</script>
 	</p>
 </div>

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700');
 
 html {
 	height: 100%;
@@ -21,11 +21,13 @@ code {
 
 h1, h2, h3, h4 {
 	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
 	text-align: center;
 }
 
 h5, h6 {
 	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
 	text-align: start;
 }
 
@@ -37,6 +39,10 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 	position: relative;
 	width: 0;
 }
+
+/*li {
+	margin-bottom: 1em;
+}*/
 
 table {
 	border-collapse: collapse;
@@ -77,6 +83,11 @@ header {
 	white-space: nowrap;
 }
 
+.navbar {
+	overflow: auto;
+	flex: 1;
+}
+
 .navbar * {
 	display: inline-block;
 }
@@ -92,9 +103,8 @@ header {
 	color: gray;
 }
 
-.navbar {
-	overflow: auto;
-	flex: 1;
+.navbar .active::before {
+	content: "> ";
 }
 
 .dropdown .dropdown-option {
@@ -150,7 +160,7 @@ header {
 .copyright::before {
 	background: white;
 	bottom: 0;
-	content: '🄯 2021 linux_user36';
+	content: '\1F12F  2021 linux_user36';
 	font-family: monospace;
 	margin-bottom: 20px;
 	margin-left: 20px;
