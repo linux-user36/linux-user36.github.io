@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700');
-
 html {
 	height: 100%;
 }
 
 body {
 	background-image: url('./background.jpg');
-	font-family: 'Noto Serif', Arial, sans-serif;
+	font-family: 'Noto Serif', 'Liberation Serif', serif;
 	height: 100%;
 	margin: 0 auto 0;
 	max-width: 960px;
@@ -156,6 +153,10 @@ header {
 	z-index: 10;
 }
 
+.author {
+	text-align: end;
+}
+
 /* Copyright banner */
 .copyright::before {
 	background: white;
@@ -165,5 +166,4 @@ header {
 	margin-bottom: 20px;
 	margin-left: 20px;
 	position: fixed;
-	text-align: right;
 }
