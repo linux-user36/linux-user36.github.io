@@ -12,6 +12,10 @@ body {
 }
 
 /* HTML element customizations */
+p {
+	text-align: justify;
+}
+
 code {
 	font-family: 'Robot Mono', monospace;
 }
@@ -157,11 +161,10 @@ header {
 	text-align: end;
 }
 
-/* Copyright banner */
-.copyright::before {
+/* Floating link banner */
+.imprint {
 	background: white;
 	bottom: 0;
-	content: '\1F12F  2021 linux_user36';
 	font-family: monospace;
 	margin-bottom: 20px;
 	margin-left: 20px;
